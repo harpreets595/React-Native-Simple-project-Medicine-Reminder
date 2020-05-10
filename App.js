@@ -3,6 +3,10 @@ import { StyleSheet, Button, Text, View, SafeAreaView } from 'react-native';
 //components.
 import Navbar from './Navbar';
 import Reminder from './Reminder';
+import styled from 'styled-components/native';
+
+
+
 
 
 export default function App() {
@@ -16,29 +20,27 @@ export default function App() {
   return (
     //SAFE AREA VIEW.
     //ensures padding space across all mobile.
-    <SafeAreaView style={styles.container}>
-      <View style={styles.wrapper}>
+    <StyledSafeAreaView>
+      <StyledView >
         {/* ----------------NAVBAR----------------- */}
         <Navbar />
         {/* ----------------REMINDER----------------- */}
         <Reminder />
-      </View>
-    </SafeAreaView>
+      </StyledView>
+    </StyledSafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    backgroundImage: 'linear-gradient(15deg, #13547a 0%, #80d0c7 100%)',
-    height: '100vh',
-    width: '100vw',
-    alignItems: 'center',
-  },
-  wrapper: {
+
+const StyledView = styled.View`
+
+`
 
 
+const StyledSafeAreaView = styled.SafeAreaView`
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
 
-  }
-
-
-});
+`
