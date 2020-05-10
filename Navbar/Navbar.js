@@ -14,16 +14,19 @@ export default Navbar;
 
 const styles = StyleSheet.create({
     container: {
-        width: '100%',
-        height: '10%',
+
 
     },
     title: {
-        color: 'black',
-        padding: '24px',
+        width: '100%',
+        color: 'white',
         fontFamily: "Comic Sans MS",
-        textAlign: 'center',
-        fontSize: '50px'
+        alignItems: 'center',
+
+
+
+
+
 
 
     }

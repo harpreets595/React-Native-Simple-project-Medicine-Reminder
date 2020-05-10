@@ -16,8 +16,8 @@ export default function App() {
   return (
     //SAFE AREA VIEW.
     //ensures padding space across all mobile.
-    <SafeAreaView>
-      <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.wrapper}>
         {/* ----------------NAVBAR----------------- */}
         <Navbar />
         {/* ----------------REMINDER----------------- */}
@@ -30,10 +30,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     backgroundImage: 'linear-gradient(15deg, #13547a 0%, #80d0c7 100%)',
-    width: '100%',
-    height: '10%',
-
+    height: '100vh',
+    width: '100vw',
+    alignItems: 'center',
   },
+  wrapper: {
+
+
+
+  }
 
 
 });

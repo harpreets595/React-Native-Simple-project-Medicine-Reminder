@@ -61,13 +61,8 @@ export default Reminder;
 
 const styles = StyleSheet.create({
     mainMsg: {
-        height: '70vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: '30px',
-        textAlign: 'center',
-        padding: '20px'
+
+
 
     }
 });
