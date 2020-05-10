@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
 
     },
     title: {
-        color: 'white',
+        color: 'black',
         padding: '24px',
         fontFamily: "Comic Sans MS",
         textAlign: 'center',

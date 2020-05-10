@@ -10,7 +10,7 @@ export default function App() {
 
 
 
-
+  //harperrt
 
 
   return (
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundImage: 'linear-gradient(15deg, #13547a 0%, #80d0c7 100%)',
     width: '100%',
-    height: '100%',
+    height: '10%',
 
   },
 
