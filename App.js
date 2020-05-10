@@ -41,6 +41,5 @@ const StyledSafeAreaView = styled.SafeAreaView`
     background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
     height: 100vh;
     width: 100vw;
-    align-items: center;
 
 `

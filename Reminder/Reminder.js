@@ -29,7 +29,6 @@ const Reminder = () => {
         //get minutes for current date 
         dayArray.forEach((day) => {
             //only if it is the same day.
-
             if (day === getDay) {
                 if (currentMinutes === medicineReminder[day].time) {
                     setMessage(`${medicineReminder[day].message} - It is 12pm.`)
@@ -47,16 +46,15 @@ const Reminder = () => {
             }
         })
     })
-
     return (
 
 
-        <View>
+        <StyledView>
             {message !== null && <StyledReminderMessageText>
                 {message}
             </StyledReminderMessageText>}
 
-        </View>
+        </StyledView>
     )
 }
 
@@ -66,5 +64,18 @@ export default Reminder;
 
 
 const StyledReminderMessageText = styled.Text`
+
+justify-content: center;
+font-size: 40px;
+align-items: center;
+text-align: center;
+
+
+`
+
+const StyledView = styled.View`
+height: 70vh;
+width: 100%;
+justify-content: center;
 
 `

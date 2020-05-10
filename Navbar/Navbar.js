@@ -24,7 +24,9 @@ const StyledNavText = styled.Text`
         width: 100%;
         color: white;
         font-family: "Comic Sans MS";
-        align-Items: 'center',
+        align-Items: 'center';
+        font-size: 50px;
+        margin-horizontal: 50;
 
 `
 
