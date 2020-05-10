@@ -11,9 +11,6 @@ const Reminder = () => {
     const [message, setMessage] = useState(null);
     const [modalVisible, setModalVisible] = useState(false);
 
-
-
-
     useEffect(() => {
         //current day - will convert anyday (wednesday => wed)
         let getDay = new Date().toDateString().split(' ')[0].toLowerCase();
@@ -65,8 +62,8 @@ const styles = StyleSheet.create({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: '30px',
-        textAlign: 'center',
+        // fontSize: '30px',
+        // textAlign: 'center',
         padding: '20px'
 
     }

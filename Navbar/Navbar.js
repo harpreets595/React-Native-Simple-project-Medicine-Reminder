@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
         padding: '24px',
         fontFamily: "Comic Sans MS",
         textAlign: 'center',
-        fontSize: '50px'
+        // fontSize: '50px'
 
 
     }
