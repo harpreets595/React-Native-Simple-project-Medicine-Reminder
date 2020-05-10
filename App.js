@@ -1,19 +1,36 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { StyleSheet, Button, Text, View } from 'react-native';
+//components.
+import Navbar from './Navbar';
+import Reminder from './Reminder';
+
 
 export default function App() {
+
+
+
+
+
+
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      {/* ----------------NAVBAR----------------- */}
+      <Navbar />
+      {/* ----------------REMINDER----------------- */}
+      <Reminder />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundImage: 'linear-gradient(15deg, #13547a 0%, #80d0c7 100%)',
+    width: '100%',
+    height: '100%',
+
   },
+  bitch: {
+  }
+
 });
