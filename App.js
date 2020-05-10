@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, Button, Text, View } from 'react-native';
+import { StyleSheet, Button, Text, View, SafeAreaView } from 'react-native';
 //components.
 import Navbar from './Navbar';
 import Reminder from './Reminder';
@@ -14,12 +14,16 @@ export default function App() {
 
 
   return (
-    <View style={styles.container}>
-      {/* ----------------NAVBAR----------------- */}
-      <Navbar />
-      {/* ----------------REMINDER----------------- */}
-      <Reminder />
-    </View>
+    //SAFE AREA VIEW.
+    //ensures padding space across all mobile.
+    <SafeAreaView>
+      <View style={styles.container}>
+        {/* ----------------NAVBAR----------------- */}
+        <Navbar />
+        {/* ----------------REMINDER----------------- */}
+        <Reminder />
+      </View>
+    </SafeAreaView>
   );
 }
 
