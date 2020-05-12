@@ -1,12 +1,12 @@
 export const medicineReminder = {
     wed: {
         time: 720,
-        message: 'Please take your medication - harpreet ;)',
-        name: "Priya"
+        message: 'Please dont forget to take jur medication Priuu',
+        name: "Priya",
     },
     sun: {
         time: 720,
-        message: 'Please take your second medication - harpreet ;)',
-        name: "Priya"
-    }
+        message: 'Please dont forget to take jur medication Priuu',
+        name: "Priya",
+    },
 }

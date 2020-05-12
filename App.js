@@ -3,12 +3,10 @@ import { StyleSheet, Button, Text, View, SafeAreaView } from 'react-native';
 //components.
 import Navbar from './Navbar';
 import Reminder from './Reminder';
+import styled from 'styled-components/native';
 
 
 export default function App() {
-
-
-
 
   //harperrt
 
@@ -16,10 +14,10 @@ export default function App() {
   return (
     //SAFE AREA VIEW.
     //ensures padding space across all mobile.
-    <SafeAreaView>
+    <SafeAreaView style={styles.back} >
       <View style={styles.container}>
         {/* ----------------NAVBAR----------------- */}
-        <Navbar />
+        <Navbar/>
         {/* ----------------REMINDER----------------- */}
         <Reminder />
       </View>
@@ -29,10 +27,14 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    // backgroundImage: 'linear-gradient(15deg, #13547a 0%, #80d0c7 100%)',
-    width: '100%',
-    height: '10%',
-
+    // marginTop: 25,
+    // backgroundColor: '#D822D1',
+    // padding: 100
+    // marginVertical: 20,
+  },
+  back:{
+    // marginTop:25,
+    backgroundColor: '#C7ACCB',
+    height: 1000,
   }
-
 });
